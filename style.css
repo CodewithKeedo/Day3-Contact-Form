@@ -1,0 +1,112 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      width: 80%;
+      max-width: 900px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .form-section h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007bff;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .success {
+      color: green;
+      font-size: 0.85rem;
+      margin-top: 4px;
+    }
+
+    .char-counter {
+      font-size: 0.8rem;
+      text-align: right;
+      margin-top: 4px;
+      color: #666;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:disabled {
+      background: gray;
+      cursor: not-allowed;
+    }
+
+    button:hover:not(:disabled) {
+      background: #0056b3;
+    }
+
+    .image-section {
+      flex: 1;
+      background: url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61") no-repeat center/cover;
+    }
+
+    @media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .image-section {
+        height: 200px;
+      }
+    }
